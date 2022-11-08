@@ -1,6 +1,6 @@
 # Rumble Frontend (CDP 2.0 Task 2)
 
-[Deployed in Versel](https://cdp-rumble-frontend.vercel.app/) 🚀
+[Deployed in Versel](https://cdp-rumble-frontend.vercel.app/) 🚀 (The auth wont work for some reason Versal is not allowing Oauth using popups on a default domain name)
 
 For detailed info on the architecture please check out the Readme in the [Backend Repo](https://github.com/CyberFlaw/cdp-rumble-backend)
 
