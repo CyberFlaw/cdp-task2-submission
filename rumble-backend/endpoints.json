@@ -1,0 +1,317 @@
+[
+  {
+    "v": 1,
+    "name": "Rumble",
+    "folders": [],
+    "requests": [
+      {
+        "v": "1",
+        "endpoint": "http://127.0.0.1:5000/user/register",
+        "name": "user register",
+        "params": [],
+        "headers": [
+          {
+            "active": true,
+            "key": "Content-Type",
+            "value": ""
+          }
+        ],
+        "method": "POST",
+        "auth": {
+          "authType": "none",
+          "authActive": true,
+          "addTo": "Headers",
+          "key": "",
+          "value": ""
+        },
+        "preRequestScript": "",
+        "testScript": "",
+        "body": {
+          "contentType": "application/json",
+          "body": "{\n  \"name\": \"flip\",\n  \"image\": \"https://lh3.googleusercontent.com/a/ALm5wu07mTMPimG1xUJ_EC0HmFdnEBiIQKTmblDbDQBh=s96-c\",\n  \"email\": \"dev.testboi@gmail.com\"\n}"
+        }
+      },
+      {
+        "v": "1",
+        "endpoint": "http://127.0.0.1:5000/user/732380",
+        "name": "fetch user by id",
+        "params": [],
+        "headers": [
+          {
+            "active": true,
+            "key": "Content-Type",
+            "value": ""
+          }
+        ],
+        "method": "GET",
+        "auth": {
+          "authType": "none",
+          "authActive": true,
+          "addTo": "Headers",
+          "key": "",
+          "value": ""
+        },
+        "preRequestScript": "",
+        "testScript": "",
+        "body": {
+          "contentType": "application/json",
+          "body": ""
+        }
+      },
+      {
+        "v": "1",
+        "endpoint": "http://127.0.0.1:5000/users/all",
+        "name": "fetch all users",
+        "params": [],
+        "headers": [
+          {
+            "active": true,
+            "key": "Content-Type",
+            "value": ""
+          }
+        ],
+        "method": "GET",
+        "auth": {
+          "authType": "none",
+          "authActive": true,
+          "addTo": "Headers",
+          "key": "",
+          "value": ""
+        },
+        "preRequestScript": "",
+        "testScript": "",
+        "body": {
+          "contentType": "application/json",
+          "body": ""
+        }
+      },
+      {
+        "v": "1",
+        "endpoint": "http://127.0.0.1:5000/",
+        "name": "health check",
+        "params": [],
+        "headers": [
+          {
+            "active": true,
+            "key": "Content-Type",
+            "value": ""
+          }
+        ],
+        "method": "GET",
+        "auth": {
+          "authType": "none",
+          "authActive": true,
+          "addTo": "Headers",
+          "key": "",
+          "value": ""
+        },
+        "preRequestScript": "",
+        "testScript": "",
+        "body": {
+          "contentType": "application/json",
+          "body": ""
+        }
+      },
+      {
+        "v": "1",
+        "endpoint": "http://127.0.0.1:5000/join",
+        "name": "add room",
+        "params": [
+          {
+            "key": "user",
+            "value": "732380",
+            "active": true
+          },
+          {
+            "key": "friend",
+            "value": "959781",
+            "active": true
+          }
+        ],
+        "headers": [
+          {
+            "active": true,
+            "key": "Content-Type",
+            "value": ""
+          }
+        ],
+        "method": "POST",
+        "auth": {
+          "authType": "none",
+          "authActive": true,
+          "addTo": "Headers",
+          "key": "",
+          "value": ""
+        },
+        "preRequestScript": "",
+        "testScript": "",
+        "body": {
+          "contentType": "application/json",
+          "body": ""
+        }
+      },
+      {
+        "v": "1",
+        "endpoint": "http://127.0.0.1:5000/room/732380959781",
+        "name": "fetch room by id",
+        "params": [],
+        "headers": [
+          {
+            "active": true,
+            "key": "Content-Type",
+            "value": ""
+          }
+        ],
+        "method": "GET",
+        "auth": {
+          "authType": "none",
+          "authActive": true,
+          "addTo": "Headers",
+          "key": "",
+          "value": ""
+        },
+        "preRequestScript": "",
+        "testScript": "",
+        "body": {
+          "contentType": "application/json",
+          "body": ""
+        }
+      },
+      {
+        "v": "1",
+        "endpoint": "http://127.0.0.1:5000/sync/732380959781",
+        "name": "backup to db",
+        "params": [],
+        "headers": [
+          {
+            "active": true,
+            "key": "Content-Type",
+            "value": ""
+          }
+        ],
+        "method": "POST",
+        "auth": {
+          "authType": "none",
+          "authActive": true,
+          "addTo": "Headers",
+          "key": "",
+          "value": ""
+        },
+        "preRequestScript": "",
+        "testScript": "",
+        "body": {
+          "contentType": "application/json",
+          "body": "{\n    \"owner\": 732380,\n    \"text\": \"Hey\"\n}"
+        }
+      },
+      {
+        "v": "1",
+        "endpoint": "http://127.0.0.1:5000/sync/all/732380959781",
+        "name": "fetch msg from db",
+        "params": [],
+        "headers": [
+          {
+            "active": true,
+            "key": "Content-Type",
+            "value": ""
+          }
+        ],
+        "method": "GET",
+        "auth": {
+          "authType": "none",
+          "authActive": true,
+          "addTo": "Headers",
+          "key": "",
+          "value": ""
+        },
+        "preRequestScript": "",
+        "testScript": "",
+        "body": {
+          "contentType": "application/json",
+          "body": "{\n  \"owner\": 732380,\n  \"text\": \"Hello\"\n}"
+        }
+      },
+      {
+        "v": "1",
+        "endpoint": "http://127.0.0.1:5000/sync/msg",
+        "name": "edit message",
+        "params": [
+          {
+            "key": "room_id",
+            "value": "732380959781",
+            "active": true
+          },
+          {
+            "key": "msg_id",
+            "value": "636994079f586d3d7fa5a015",
+            "active": true
+          },
+          {
+            "key": "text",
+            "value": "How are you",
+            "active": true
+          }
+        ],
+        "headers": [
+          {
+            "active": true,
+            "key": "Content-Type",
+            "value": ""
+          }
+        ],
+        "method": "PUT",
+        "auth": {
+          "authType": "none",
+          "authActive": true,
+          "addTo": "Headers",
+          "key": "",
+          "value": ""
+        },
+        "preRequestScript": "",
+        "testScript": "",
+        "body": {
+          "contentType": "application/json",
+          "body": "{\n  \"owner\": 732380,\n  \"text\": \"Hello\"\n}"
+        }
+      },
+      {
+        "v": "1",
+        "endpoint": "http://127.0.0.1:5000/sync/msg",
+        "name": "delete message",
+        "params": [
+          {
+            "key": "room_id",
+            "value": "732380959781",
+            "active": true
+          },
+          {
+            "key": "msg_id",
+            "value": "636994079f586d3d7fa5a015",
+            "active": true
+          }
+        ],
+        "headers": [
+          {
+            "active": true,
+            "key": "Content-Type",
+            "value": ""
+          }
+        ],
+        "method": "DELETE",
+        "auth": {
+          "authType": "none",
+          "authActive": true,
+          "addTo": "Headers",
+          "key": "",
+          "value": ""
+        },
+        "preRequestScript": "",
+        "testScript": "",
+        "body": {
+          "contentType": "application/json",
+          "body": "{\n  \"owner\": 732380,\n  \"text\": \"Hello\"\n}"
+        }
+      }
+    ]
+  }
+]
