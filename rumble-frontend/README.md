@@ -12,9 +12,9 @@ The finished website will be hosted in Vercel
 
 ## Preview
 
-![home](/screenshots/home.jpg)
+![home](/rumble-frontend/screenshots/home.jpg)
 
-![chat](/screenshots/chat.jpg)
+![chat](/rumble-frontend/screenshots/chat.jpg)
 
 ## Pending Work
 

@@ -13,3 +13,5 @@ The detailed docs for the architecture are provided in the backend repository an
 **Note**: I recommend following the original repo for both the software for cloning and testing. You can check out the stand-alone repos by clicking the hyperlinks shown above
 
 ## Explanation
+
+The video is uploaded [Here](https://www.loom.com/share/aadb00f56f914063a5816764c95a4fa5)

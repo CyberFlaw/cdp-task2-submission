@@ -34,7 +34,7 @@ The server is running an Actix Web app which is built in Rust. The src is divide
 
 Two databases are working in a shared MongoDB Atlas Cluster. The databases are `Users` and `Messages` respectively
 
-![database](/screenshots/database.jpg)
+![database](screenshots/database.jpg)
 
 The `Users` database contains 2 collections:
 
@@ -149,7 +149,7 @@ The main reason I chose Rust over Node.js, is the pain of the lack of logging an
 
 - Deploying in Render. The program ran and build fine in my local system (WSL Ubuntu) and Render servers, but for some unknown reason, it can't complete the health check and host the backend
 
-![render error](/screenshots/render%20error.jpg)
+![render error](screenshots/render%20error.jpg)
 
 ## TODO
 
